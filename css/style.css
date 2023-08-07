@@ -228,13 +228,217 @@ canvas {
   position: absolute;
   display: flex;
   justify-content: center;
-  align-items: center;
+  top: 34vh;
   background-color: rgba(5, 150, 105, 0.2);
   z-index: 1;
+  opacity: 0;
+  animation-name: fadeInAnime;
+  animation-fill-mode: forwards;
+  animation-duration: 1.4s;
+  animation-delay: 1.2s;
 }
 
 .hero-title {
   display: block;
   padding: 2rem 3rem;
   font-size: 1.5rem;
+  color:#222;
+}
+
+.description-lab{
+  position: absolute;
+  bottom: 45vh;
+  text-align: center;
+  opacity: 0;
+  animation-name: fadeInAnime;
+  animation-fill-mode: forwards;
+  animation-duration: 1.4s;
+  animation-delay: 1.6s;
+}
+
+.description-lab p{
+  font-size: 1rem;
+  color: #064e3b;
+  line-height: 2;
+}
+
+#circle-java,
+#circle-python,
+#circle-ts,
+#circle-laravel,
+#circle-react,
+#circle-go,
+#circle-aws,
+#circle-nextjs,
+#circle-azure,
+#circle-nodejs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 50%;
+  font-family: "Chakra Petch", sans-serif;
+  z-index: 2;
+  opacity: 0;
+  animation-name: fadeUpAnime;
+  animation-fill-mode: forwards;
+}
+
+#circle-java {
+  width: 6rem;
+  height: 6rem;
+  background-color: rgba(52, 211, 153, 0.4);
+  top: 45vh;
+  left: 12vw;
+  font-size: 1rem;
+  font-weight: 800;
+  animation-duration: 1s;
+  animation-delay: 0.1s;
+}
+
+#circle-python {
+  width: 10rem;
+  height: 10rem;
+  background-color: rgba(52, 211, 153, 0.65);
+  top: 42vh;
+  right: 13vw;
+  font-size: 1rem;
+  font-weight: 800;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+}
+
+#circle-ts {
+  width: 16rem;
+  height: 16rem;
+  background-color: rgba(52, 211, 153, 0.75);
+  bottom: 10vh;
+  left: 6vw;
+  font-size: 1.6rem;
+  font-weight: 800;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+}
+
+#circle-laravel {
+  width: 6rem;
+  height: 6rem;
+  background-color: rgba(52, 211, 153, 0.4);
+  top: 18vh;
+  right: 40vw;
+  font-size: 0.8rem;
+  font-weight: 800;
+  animation-duration: 1s;
+  animation-delay: 0.4s;
+}
+
+#circle-react {
+  width: 12rem;
+  height: 12rem;
+  background-color: rgba(52, 211, 153, 0.6);
+  bottom: 9vh;
+  right: 9vw;
+  font-size: 1.2rem;
+  font-weight: 800;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+}
+
+#circle-go {
+  width: 16rem;
+  height: 16rem;
+  background-color: rgba(52, 211, 153, 0.75);
+  top: 9vh;
+  right: 5vw;
+  font-size: 2rem;
+  font-weight: 800;
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+
+#circle-aws {
+  width: 10rem;
+  height: 10rem;
+  background-color: rgba(52, 211, 153, 0.4);
+  bottom: 10vh;
+  left: 31vw;
+  font-size: 1rem;
+  font-weight: 800;
+  animation-duration: 1s;
+  animation-delay: 0.7s;
+}
+
+#circle-nextjs {
+  width: 14rem;
+  height: 14rem;
+  background-color: rgba(52, 211, 153, 0.65);
+  top: 10vh;
+  left: 10vw;
+  font-size: 1.4rem;
+  font-weight: 800;
+  animation-duration: 1s;
+  animation-delay: 0.6s;
+}
+
+#circle-azure {
+  width: 8rem;
+  height: 8rem;
+  background-color: rgba(52, 211, 153, 0.55);
+  top: 10vh;
+  left: 40vw;
+  font-size: 0.8rem;
+  font-weight: 800;
+  animation-duration: 1s;
+  animation-delay: 0.8s;
+}
+
+#circle-nodejs {
+  width: 14rem;
+  height: 14rem;
+  background-color: rgba(52, 211, 153, 0.7);
+  bottom: 2vh;
+  right: 32vw;
+  font-size: 1.4rem;
+  font-weight: 800;
+  animation-duration: 1s;
+  animation-delay: 0.9s;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInAnime {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.hero-contact-btn-block{
+  position: absolute;
+  bottom: 30vh;
+  z-index: 3;
+}
+
+.hero-contact-btn-block button{
+  padding: 1rem 1.6rem;
+  border-radius: 4px;
+  background: #FFA500;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 200;
 }
