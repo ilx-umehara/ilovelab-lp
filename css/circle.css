@@ -1,0 +1,154 @@
+#circle-java,
+#circle-python,
+#circle-ts,
+#circle-laravel,
+#circle-react,
+#circle-go,
+#circle-aws,
+#circle-nextjs,
+#circle-azure,
+#circle-nodejs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 50%;
+  font-family: "Chakra Petch", sans-serif;
+  font-family: "Rajdhani", sans-serif;
+  z-index: 2;
+  opacity: 0;
+  animation-name: fadeUpAnime;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#circle-java {
+  width: 6rem;
+  height: 6rem;
+  background-color: rgba(52, 211, 153, 0.4);
+  top: 45vh;
+  left: 12vw;
+  font-size: 1rem;
+  font-weight: 800;
+  animation-duration: 1s;
+  animation-delay: 0.1s;
+}
+
+#circle-python {
+  width: 10rem;
+  height: 10rem;
+  background-color: rgba(52, 211, 153, 0.65);
+  top: 42vh;
+  right: 13vw;
+  font-size: 1rem;
+  font-weight: 800;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+}
+
+#circle-ts {
+  width: 16rem;
+  height: 16rem;
+  background-color: rgba(52, 211, 153, 0.75);
+  bottom: 10vh;
+  left: 13vw;
+  font-size: 1.6rem;
+  font-weight: 800;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+}
+
+#circle-laravel {
+  width: 6rem;
+  height: 6rem;
+  background-color: rgba(52, 211, 153, 0.4);
+  top: 18vh;
+  right: 40vw;
+  font-size: 0.8rem;
+  font-weight: 800;
+  animation-duration: 1s;
+  animation-delay: 0.4s;
+}
+
+#circle-react {
+  width: 12rem;
+  height: 12rem;
+  background-color: rgba(52, 211, 153, 0.6);
+  bottom: 9vh;
+  right: 9vw;
+  font-size: 1.2rem;
+  font-weight: 800;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+}
+
+#circle-go {
+  width: 16rem;
+  height: 16rem;
+  background-color: rgba(52, 211, 153, 0.75);
+  top: 9vh;
+  right: 5vw;
+  font-size: 2rem;
+  font-weight: 800;
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+
+#circle-aws {
+  width: 10rem;
+  height: 10rem;
+  background-color: rgba(52, 211, 153, 0.4);
+  bottom: 6vh;
+  left: 35vw;
+  font-size: 1rem;
+  font-weight: 800;
+  animation-duration: 1s;
+  animation-delay: 0.7s;
+}
+
+#circle-nextjs {
+  width: 14rem;
+  height: 14rem;
+  background-color: rgba(52, 211, 153, 0.65);
+  top: 10vh;
+  left: 10vw;
+  font-size: 1.4rem;
+  font-weight: 800;
+  animation-duration: 1s;
+  animation-delay: 0.6s;
+}
+
+#circle-azure {
+  width: 8rem;
+  height: 8rem;
+  background-color: rgba(52, 211, 153, 0.55);
+  top: 10vh;
+  left: 40vw;
+  font-size: 0.8rem;
+  font-weight: 800;
+  animation-duration: 1s;
+  animation-delay: 0.8s;
+}
+
+#circle-nodejs {
+  width: 14rem;
+  height: 14rem;
+  background-color: rgba(52, 211, 153, 0.7);
+  bottom: 14vh;
+  right: 32vw;
+  font-size: 1.4rem;
+  font-weight: 800;
+  animation-duration: 1s;
+  animation-delay: 0.9s;
+}

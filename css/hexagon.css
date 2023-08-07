@@ -1,0 +1,64 @@
+.hexagon-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  --wrapper-width: 70%;
+  width: var(--wrapper-width); 
+  margin-right: calc(
+    -1 * var(--wrapper-width) / 3 * 0.25 * 2 - var(--wrapper-width) / 3 * 0.05 *
+      2
+  );
+  margin-bottom: 20%;
+}
+@media (max-width: 768px) {
+  .hexagon-wrapper {
+    --wrapper-width: 100%;
+    font-size: 3vw;
+  }
+}
+.hexagons {
+  width: calc(100% / 3);
+}
+.honeycomb-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.hexagon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  aspect-ratio: 200 / 173; 
+  background-color: #34d399;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+.hexagon > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 99%;
+  height: 99%;
+  background-color: #f0fdfa;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.hexagon:nth-of-type(2),
+.hexagon:nth-of-type(3) {
+  margin-top: -1%;
+}
+
+.honeycomb-area .hexagons-left,
+.honeycomb-area .hexagons-right {
+  transform: translateY(calc(100% / 6));
+}
+
+.honeycomb-area .hexagons-center,
+.honeycomb-area .hexagons-right {
+  margin-left: calc(-100% / 3 * 0.2 - 100% / 3 * 0.05);
+}
+
+.hexagon span {
+  font-size: 1.3rem;
+  font-family: "IBM Plex Sans", sans-serif;
+}

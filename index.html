@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/hexagon.css" rel="stylesheet" />
+    <link href="css/circle.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Rajdhani:wght@300;400&display=swap" rel="stylesheet">
+    <script src="/js/common.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="hero">
+      <div id="particles-js" class="hero-container">
+        <!-- <div class="hero-container">
+          <div class="hero-container-left">
+            <h1>
+              創業33年のアイロベックスが ハイクオリティな国内ラボを 提供します
+            </h1>
+          </div>
+          <div class="hero-container-right">
+            <div class="honeycomb-area">
+            <div class="hexagon-wrapper">
+              <div class="hexagons hexagons-left">
+                <div class="hexagon">
+                  <span>Java</span>
+                </div>
+                <div class="hexagon">
+                  <span>Python</span>
+                </div>
+                <div class="hexagon">
+                  <span>TypeScript</span>
+                </div>
+              </div>
+              <div class="hexagons hexagons-center">
+                <div class="hexagon">
+                  <span>Laravel</span>
+                </div>
+                <div class="hexagon">
+                  <span>React</span>
+                </div>
+                <div class="hexagon">
+                  <span>Go</span>
+                </div>
+              </div>
+              <div class="hexagons hexagons-right">
+                <div class="hexagon">
+                  <span>AWS</span>
+                </div>
+                <div class="hexagon">
+                  <span>Next.js</span>
+                </div>
+                <div class="hexagon">
+                  <span>Azure</span>
+                </div>
+              </div>
+            </div>
+                      </div>
+        </div>
+          </div> -->
+          <div class="hero-title-block">
+            <h1 class="hero-title">
+              <strong>創業33年</strong>のアイロベックスが ハイクオリティな<strong>国内ラボ</strong>を提供します
+            </h1>
+          </div>
+            <div id="circle-java">
+              <span>Java</span>
+            </div>
+            <div id="circle-python">
+              <span>Python</span>
+            </div>
+            <div id="circle-ts">
+              <span>TypeScript</span>
+            </div>
+
+            <div id="circle-laravel">
+              <span>Laravel</span>
+            </div>
+            <div id="circle-react">
+              <span>React</span>
+            </div>
+            <div id="circle-go">
+              <span>Go</span>
+            </div>
+            <div id="circle-nodejs">
+              <span>Node.js</span>
+            </div>
+            <div id="circle-aws">
+              <span>AWS</span>
+            </div>
+            <div id="circle-nextjs">
+              <span>Next.js</span>
+            </div>
+            <div id="circle-azure">
+              <span>Azure</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="particles.js"></script>
+      <script src="js/app.js"></script>
+      <script>
+        var count_particles, stats, update;
+        stats = new Stats();
+        stats.setMode(0);
+        stats.domElement.style.position = "absolute";
+        stats.domElement.style.left = "0px";
+        stats.domElement.style.top = "0px";
+        document.body.appendChild(stats.domElement);
+        count_particles = document.querySelector(".js-count-particles");
+        update = function () {
+          stats.begin();
+          stats.end();
+          if (
+            window.pJSDom[0].pJS.particles &&
+            window.pJSDom[0].pJS.particles.array
+          ) {
+            count_particles.innerText =
+              window.pJSDom[0].pJS.particles.array.length;
+          }
+          requestAnimationFrame(update);
+        };
+        requestAnimationFrame(update);
+      </script>
+    </section>
+  </body>
+</html>
