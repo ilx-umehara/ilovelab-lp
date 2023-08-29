@@ -515,7 +515,7 @@ canvas {
     width: 4rem;
     height: 4rem;
     background-color: rgba(52, 211, 153, 0.30);
-    top: 34vh;
+    top: 36vh;
     right: 45vw;
     font-size: 0.8rem;
     font-weight: 800;
@@ -527,8 +527,8 @@ canvas {
     width: 6rem;
     height: 6rem;
     background-color: rgba(52, 211, 153, 0.55);
-    top: 30vh;
-    left: 2vw;
+    top: 32vh;
+    left: 6vw;
     font-size: 0.8rem;
     font-weight: 800;
     animation-duration: 1s;
@@ -564,7 +564,7 @@ canvas {
     width: 6rem;
     height: 6rem;
     background-color: rgba(52, 211, 153, 0.75);
-    top: 29vh;
+    top: 31vh;
     right: 7vw;
     font-size: 1.5rem;
     font-weight: 800;
