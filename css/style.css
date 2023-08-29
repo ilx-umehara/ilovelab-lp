@@ -446,7 +446,7 @@ canvas {
     position: absolute;
     display: flex;
     justify-content: center;
-    top: 14vh;
+    top: 10vh;
     background-color: initial;
     z-index: 1;
     opacity: 0;
@@ -482,7 +482,7 @@ canvas {
   .description-lab p {
     font-size: 1rem;
     color: #064e3b;
-    line-height: 2;
+    line-height: 1.6;
     padding: 1rem;
     text-align: left;
   }
@@ -515,7 +515,7 @@ canvas {
     width: 4rem;
     height: 4rem;
     background-color: rgba(52, 211, 153, 0.30);
-    top: 39vh;
+    top: 34vh;
     right: 45vw;
     font-size: 0.8rem;
     font-weight: 800;
@@ -527,7 +527,7 @@ canvas {
     width: 6rem;
     height: 6rem;
     background-color: rgba(52, 211, 153, 0.55);
-    top: 33vh;
+    top: 30vh;
     left: 2vw;
     font-size: 0.8rem;
     font-weight: 800;
@@ -552,8 +552,8 @@ canvas {
     width: 4rem;
     height: 4rem;
     background-color: rgba(52, 211, 153, 0.6);
-    top: 10vh;
-    right: 9vw;
+    top: 7vh;
+    right: 12vw;
     font-size: 0.8rem;
     font-weight: 800;
     animation-duration: 1s;
@@ -564,8 +564,8 @@ canvas {
     width: 6rem;
     height: 6rem;
     background-color: rgba(52, 211, 153, 0.75);
-    top: 32vh;
-    right: 3vw;
+    top: 29vh;
+    right: 7vw;
     font-size: 1.5rem;
     font-weight: 800;
     animation-duration: 1s;
@@ -576,7 +576,7 @@ canvas {
     width: 4rem;
     height: 4rem;
     background-color: rgba(52, 211, 153, 0.2);
-    top: 10vh;
+    top: 5vh;
     left: 41vw;
     font-size: 0.8rem;
     font-weight: 800;
@@ -589,7 +589,7 @@ canvas {
     width: 4rem;
     height: 4rem;
     background-color: rgba(52, 211, 153, 0.50);
-    top: 12vh;
+    top: 8vh;
     left: 10vw;
     font-size: 0.8rem;
     font-weight: 800;
